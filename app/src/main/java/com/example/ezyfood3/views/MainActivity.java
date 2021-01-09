@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.ezyfood3.History;
 import com.example.ezyfood3.R;
 import com.example.ezyfood3.databinding.ActivityMainBinding;
 import com.example.ezyfood3.models.Balance;
@@ -99,5 +100,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 binding.idActivityMainBalance.setText(sBalancePref);
             }
         }
+    }
+
+    public void mapOnClick(View view1){
+        Intent intent1 = new Intent(this, MapActivitiy.class);
+        startActivity(intent1);
+    }
+
+    public void historyOnClick(View view) {
+        Intent intent1 = new Intent(this, History.class);
+        startActivity(intent1);
     }
 }
